@@ -31,7 +31,8 @@ def structure_list(product_list, modtoplist, reslist):
                              modtoplist[j + 3] + modtoplist[j + 4]
                 reslist.append(layout)
         j += 1
-    return print(reslist)
+    for i in reslist:
+        print(i)
 
 
 browser = webdriver.Chrome()
@@ -43,5 +44,4 @@ for card in cards:
 print(product_list)
 
 structure_list(product_list, modtoplist, reslist)
-
 browser.close()
